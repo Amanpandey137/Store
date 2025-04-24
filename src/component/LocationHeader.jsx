@@ -1,6 +1,11 @@
 import { MapPin,Search,ArrowLeft } from "lucide-react";
+import { use } from "react";
+import { useState, useEffect } from "react";
 
-const LocationHeader = ({ showBack = false, title = "Your Location", onBack = () => {} }) => {
+const LocationHeader = ({setSearchText, showBack = false, title = "Your Location", onBack = () => {} }) => {
+  const [temp, setTemp] = useState("");
+  useEffect(() => {
+    setSearchText(temp);},[temp]);
     return (
       <header className="bg-white p-4 shadow-sm">
         <div className="flex items-center justify-between mb-4">
@@ -32,6 +37,8 @@ const LocationHeader = ({ showBack = false, title = "Your Location", onBack = ()
             type="search"
             placeholder="Search for deals, products, stores..."
             className="w-full p-2 pl-10 bg-gray-100 rounded-lg"
+            value={temp}
+            onChange={(e) => setTemp(e.target.value)}
           />
         </div>
       </header>
