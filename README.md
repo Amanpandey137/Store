@@ -1,12 +1,27 @@
-# React + Vite
+ 
+ # 🛒 Nearby Store Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A mobile-optimized React application that helps users discover stores, deals, and offers near them. Users can **search**, **filter**, and **sort** stores based on their ** fixed location** using browser geolocation.
 
-Currently, two official plugins are available:
+Built with **React**, **Tailwind CSS** 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📍 **Location-based Sorting** – Automatically detects user location and sorts stores by distance.
+- 🔍 **Search Filter** – Quickly search stores or deals by name.
+- 🏷️ **Category Filter** – Filter offers by categories like Grocery, Pharmacy, Essentials, etc.
+- 📱 **Responsive UI** – Fully optimized for mobile devices using Tailwind CSS.
+ 
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend**: React
+- **Styling**: Tailwind CSS
+
+---
+
+ 
